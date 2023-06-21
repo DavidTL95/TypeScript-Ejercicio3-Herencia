@@ -52,7 +52,7 @@ class Electrodomestico {
 
     precioFinal() : number{
 
-        let precio : number = defPrecio;
+        let precio : number = 100;
 
         switch(this.consumo){
             case 'A':

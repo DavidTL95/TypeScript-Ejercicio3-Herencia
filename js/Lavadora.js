@@ -5,6 +5,7 @@ class Lavadora extends Electrodomestico {
     constructor(newColor, newConsumo, newPeso, newCarga = defCarga) {
         super(newColor, newConsumo, newPeso);
         this.carga = newCarga;
+        this.precio = this.precioFinal();
     }
     //Métodos.
     getCarga() {
@@ -12,8 +13,7 @@ class Lavadora extends Electrodomestico {
     }
     comprobarCarga() {
         if (this.carga > 30) {
-            this.precio += 50;
-            return this.precio;
+            return this.precio += 50;
         }
         return this.precio;
     }

@@ -32,7 +32,7 @@ class Electrodomestico {
         this.color = color;
     }
     precioFinal() {
-        let precio = defPrecio;
+        let precio = 100;
         switch (this.consumo) {
             case 'A':
                 precio += 100;
@@ -68,6 +68,6 @@ class Electrodomestico {
             precio += 100;
         }
         this.precio = precio;
-        return precio;
+        return this.precio;
     }
 }
