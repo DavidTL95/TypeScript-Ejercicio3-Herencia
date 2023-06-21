@@ -87,6 +87,6 @@ class Electrodomestico {
             precio += 100
         }
         this.precio = precio;
-        return precio;
+        return this.precio;
     }
 }
